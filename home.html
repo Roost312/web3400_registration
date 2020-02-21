@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project2</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Caveat+Brush|Itim|Patrick+Hand+SC" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="/images/logoEditP.png" id="logo" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="toggler"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              QuickLinks
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Schedules</a>
+              <a class="dropdown-item" href="#">Programs</a>
+              <a class="dropdown-item" href="#">Leagues</a>
+              <a class="dropdown-item" href="#">Camps</a>
+              <a class="dropdown-item" href="#">Events</a>
+              <a class="dropdown-item" href="#">Build Your Own</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a href="" class="nav-link">Login</a>
+          <input class="form-control mr-sm-2" type="email" placeholder="email" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" id="button" type="button">Subscribe</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <div id="page-mask" class="container-fluid mask">
+    <div class="row justify-content-center">
+      <div class="col-3">
+        <div class="form-popup" id="myForm">
+          <form class="form-container">
+            <p class="text-center">Thank you for subscribing!</p>
+            <p class="text-center">Would you like to create a profile while you are at it?</p>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit" class="btn" onclick="closeForm()">Create Profile</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">No Thanks</button>
+            <input type="checkbox"><span><small>Send me special deals and offers via email</small></span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!---------------->
+  <!--MAIN SECTION-->
+  <main>
+    <section class="hero">
+      <div class="jumbotron jumbotron-fluid heroBg"></div>
+    </section>
+    <section class="heroText">
+      <div class="container text-center on">
+        <div class="row">
+          <div class="col-12">
+            <h1>New Spring Schedules</h1>
+            <h2>including <span id="text">TENNIS, SOCCER, FLAG FOOTBALL, ALL GIRLS BASKETBALL AND MORE!</span> Classes
+              Start the
+              Week of
+              March 18th, 2019</h2>
+            <div class="col-12 signUp">
+              <button class="btn btn-primary text-center">Sign Up Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="social secPadding onTop">
+      <div class="container">
+        <div class="row text-center align-items-end">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-3 socialCol">
+            <a href="" class="weatherText">
+              <p>weather hotline (310) 503 - 8885</p>
+            </a>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 socialCol weatherIconUl">
+            <ul class="">
+              <li class=""><a href=""><i class="fab fa-facebook-square"></i></a></li>
+              <li class=""><a href=""><i class="fab fa-twitter-square"></i></a></li>
+              <li class=""><a href=""><i class="fab fa-linkedin"></i></a></li>
+              <li class=""><a href=""><i class="fab fa-youtube-square"></i></a></li>
+              <li class=""><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-3 socialCol">
+            <a href="" class="weatherText">
+              <p>coachderekinc@gmail.com</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about secPadding">
+      <div class="container-fluid on">
+        <div class="row align-items-center">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 aboutCol image text-center">
+            <img src="/images/coachEdit.jpg" alt="coach derek" class="img-fluid">
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 aboutCol text">
+            <h1 class="text-left">Coach Derek</h1>
+            <p>Coach Derek aka Derek Locklear strives to make
+              each day better for the youth. His company works with
+              children from the West side to South Los Angeles.
+            </p>
+            <p>Coach emphasizes to "coach to teach and not to win." He works
+              year round to help keep the youth active, healthy and
+              full of life through his many programs and camps that are
+              for boys and girls alike.</p>
+            <div class="col btnCol">
+              <button class="btn btn-primary">More About Coach</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="camp secPadding">
+      <div class="container-fluid on">
+        <div class="row align-items-center">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 text campCol">
+            <h1>Camp</h1>
+            <p>Coach Derek Camp is for children ages 3 - 12 years old.
+              There are both half day and full day camps available. If
+              your child loves to play and interact with other kids, then
+              this is the perfect camp for them!
+            </p>
+            <p>Drop-ins are welcome anytime
+              during open hours!</p>
+            <div class="col btnCol"><button class="btn btn-primary">Coach Derek Camp</button></div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 campCol text-center">
+            <img src="/images/campEdit.jpg" alt="camp" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comingSoon secPadding">
+      <div class="container-fluid on">
+        <div class="row align-items-center">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 order-12 order-md-1 text-center comingSoonCol">
+            <img src="/images/tennis.jpg" alt="tennis" class="img-fluid">
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 order-1 order-md-12 text comingSoonCol">
+            <h1>Coming Soon</h1>
+            <p>Coach Derek is proud to announce that tennis is coming
+              to Braddock Elementary! Come join an exciting and fun class
+              for children of all ages. We have rackets if you don't have
+              one to supply!
+            </p>
+            <p>Starting Wednesday March 6th for ages 5 - 11 years old.</p>
+            <div class="col btnCol"><button class="btn btn-primary">Coach Derek Tennis</button></div>
+          </div>
+        </div>
+    </section>
+    <section class="birthday secPadding">
+      <div class="container-fluid on">
+        <div class="row align-items-center">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 text birthdayCol">
+            <h1>Birthday Parties</h1>
+            <p>Birthday parties worth bragging about!</p>
+            <p>We offer Soccer, T-Ball, Baseball, Volleyball, Football, Basketball, Track & Feild and more!</p>
+            <p>Three package options to choose from -- MVP, ALL STAR or HALL OF FAME. Each one gurantees hours of fun!
+            </p>
+            <div class="col btnCol"><button class="btn btn-primary">Coach Derek Parties</button></div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 text-center birthdayCol">
+            <img src="/images/bdayEdit.jpg" alt="birthday" class="img-fluid">
+          </div>
+        </div>
+    </section>
+    <section class="new">
+      <div class="container  text-center">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <h2>The Premiere Youth Sports Program for Boys & Girls Ages 2 - 12</h2>
+            <p>Coach Derek Inc. Youth Sports Instruction enriches children at all levels and skills. Your child will
+              have fun while developing sports skills, overall strength and coordination - plus life lessongs like
+              teamwork and self-respect in a positive environment!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="whatOffered secPadding">
+      <div class="container-fluid on">
+        <div class="row align-items-center justify-content-around">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 text-center order-12 order-md-1 whatOfferedCol">
+            <div class="list-group-flush">
+              <a href="" class="list-group-item list-group-item-action">All Schedules</a>
+              <a href="" class="list-group-item list-group-item-action">Afterschool Programs</a>
+              <a href="" class="list-group-item list-group-item-action">FUNdamental Youth League</a>
+              <a href="" class="list-group-item list-group-item-action">Coach Derek Camps</a>
+              <a href="" class="list-group-item list-group-item-action">Birthdays & Events</a>
+              <a href="" class="list-group-item list-group-item-action">Build Your Own Class</a>
+            </div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 order-1 order-md-12 text whatOfferedCol">
+            <h1>Everything Coach Offers</h1>
+            <p>Coach Derek offers tons of awesome things for your children.
+              There is never a lack of events, camps and more!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="new">
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <h2>Spring Break & Summer Camps in Playa Vista El Segundo!</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recentNews secPadding">
+      <div class="container-fluid on">
+        <div class="row align-items-center justify-content-around">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 text recentNewsCol">
+            <h1>Latest News</h1>
+            <p>Articles recommended by the Coach! These articles help get an idea for the benefits of physical activity
+              for you and your child!
+            </p>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 text-center recentNewsCol">
+            <div class="list-group-flush">
+              <a href="" class="list-group-item list-group-item-action">
+                <div class="">
+                  <h5 class="mb-1">Does Youth Sport Participation Make You a Better Adult?</h5>
+                </div>
+                <p class="mb-1">Helping children build strong character traits Participating in sports related
+                  activities thoroughout your childhood is...</p>
+                <small>Oct. 1, 2018</small>
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <div class="">
+                  <h5 class="mb-1">The Positive Effects of Sports on Kids Today</h5>
+                </div>
+                <p class="mb-1">Changing Lives In today's society, we tend to see children playing on devices instead
+                  of...</p>
+                <small>Sep. 14, 2018</small>
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <div class="">
+                  <h5 class="mb-1">South Bay Summer Camps</h5>
+                </div>
+                <p class="mb-1">Kick Off the Best Summer Ever! Coach Derek South Bay Camps Ages 3 - 12...</p>
+                <small>Jun. 4, 2018</small>
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <div class="">
+                  <h5 class="mb-1">LGTS 1st Annual Capital Campaign</h5>
+                </div>
+                <p class="mb-1">Let's Give Them a Shot: 1st Annual Capital Campaign! More About Let's Give Them a...</p>
+                <small>Dec. 7, 2017</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews secPadding">
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-12 reviewsCol">
+            <h1>Birthday Parties: They loved every minute!</h1>
+            <p>"Everything was fabulous!!! It was a huge success! Everyone had a great time - they didn't want
+              to stop playing..."</p>
+            <h6>-- Christina Rojas</h6>
+          </div>
+          <div class="col-12 text-center moreTest">
+            <button class="btn btn-primary">More Testimonials</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="leaveReview secPadding">
+      <div class="container-fluid">
+        <div class="row align-items-center text-center">
+          <div class="col-6 col-xs-6 col-sm-6 col-md-6 leavesReviewsCol"><a href=""><img src="/images/facebookEdit.jpg"
+                alt="facebook"></a></div>
+          <div class="col-6 col-xs-6 col-sm-6 col-md-6 leavesReviewsCol"><a href=""><img src="/images/yelpEdit.jpg"
+                alt="yelp"></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!------------------>
+  <!--FOOTER SECTION-->
+  <footer>
+    <section class="footer">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12">
+              <ul class="more" id="top">
+                <li><a href="">More About Us</a></li>
+                <li><a href="">LGTS (non-profit)</a></li>
+                <li><a href="">Coach Derek News</a></li>
+                <li><a href="">Become an MVP (most valuable parent)</a></li>
+                <li><a href="">Get Your School Involved</a></li>
+                <li><a href="">Create Profile</a></li>
+                <li><a href="">Camp Rules</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <h3>Contact</h3>
+              <ul class="contacted" id="middle">
+                <li>2711 N. Sepulveda Blvd, Suite 211 Manhattan Beach, CA 90266-2725</li>
+                <li><a href="">Derek Inc. (310) 800 - 5980</a></li>
+                <li><a href="">Afterschool. (310) 291 - 7870</a></li>
+                <li><a href="">Fax: 310.943.0411</a></li>
+                <li><a href="">E-mail: coachderekinc@gmail.com</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <h3>Social</h3>
+              <ul class="icons">
+                <li class=""><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                <li class=""><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                <li class=""><a href=""><i class="fab fa-linkedin"></i></a></li>
+                <li class=""><a href=""><i class="fab fa-youtube-square"></i></a></li>
+                <li class=""><a href=""><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row ftLogo">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 text-center">
+            <img src="/images/footLogo.png" alt="footer logo">
+          </div>
+        </div>
+        <div class="row ftImageCred">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 text-center">
+            <h5>images by</h5>
+            <ul>
+              <li><a
+                  href="https://pixabay.com/users/paologhedini-422890/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=718890">Paolo
+                  Ghedini</a> from <a
+                  href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=718890">Pixabay</a>
+              </li>
+              <li><a
+                  href="https://pixabay.com/users/joshdick75-5719153/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2436343">Josh
+                  Dick</a> from <a
+                  href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2436343">Pixabay</a>
+              </li>
+              <li><a
+                  href="https://pixabay.com/users/minibaby-810121/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1533194">LEO
+                  LEE</a> from <a
+                  href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1533194">Pixabay</a>
+              </li>
+              <li> <a
+                  href="https://pixabay.com/users/Ty_Swartz-617282/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=551566">Ty
+                  Swartz</a> from <a
+                  href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=551566">Pixabay</a>
+              </li>
+              <li><a
+                  href="https://pixabay.com/users/Pyxis-Web-Solutions-57134/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=186836">Brian
+                  Dowden</a> from <a
+                  href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=186836">Pixabay</a>
+              </li>
+              <li><a
+                  href="https://pixabay.com/users/minibaby-810121/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1533210">LEO
+                  LEE</a> from <a
+                  href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1533210">Pixabay</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="/scripts.js"></script>
+</body>
+
+</html>
