@@ -1,14 +1,6 @@
 <?php
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'W01173226';
-$DATABASE_PASS = 'Jessencs!';
-$DATABASE_NAME = 'W01173226';
-
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
-
-if (mysqli_connect_error()) {
-  die('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
+//Aaron Whipple 2-24-20 database connection
+require 'dbcon.php';
 
 if (isset($_GET['email'], $_GET['code'])) {
   if ($stmt = $con->prepare('SELECT * FROM accounts WHERE email = ? AND activation_code = ?')) {
