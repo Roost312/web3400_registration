@@ -55,13 +55,13 @@ $_SESSION['id'] = $id;
 } else {
 
 echo 'Incorrect password!';
-      header('Location: index.html?message=Incorrect Password');
+      header('Location: index.php?message=Incorrect Password');
 }
 
 } else {
 
 echo 'Incorrect username!';
-  header('Location: index.html?message=Incorrect Username');
+  header('Location: index.php?message=Incorrect Username');
 
 }
 

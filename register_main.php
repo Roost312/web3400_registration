@@ -12,41 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">
-                <h1 class="title">My Website</h1>
-            </a>
-
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-
-            <div class="navbar-start">
-
-            </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <!--
-                        <a href="profile.php" class="button">
-                            <span class="icon"><i class="fas fa-user-circle"></i></span><span>Profile</span>
-                        </a>
-                        <a href="logout.php" class="button">
-                            <span class="icon"><i class="fas fa-sign-out-alt"></i></span><span>Logout</span>
-                        </a>
--->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+   <?php include './top_nav/top-nav.php'; ?>
     <section class="section">
         <div class="container">
             <h1 class="title">
@@ -55,20 +21,18 @@
             <form action="register.php" method="post">
                 <div class="field">
                     <div class="control has-icons-left has-icons-right">
-                        <input class="input" type="text" name="username" placeholder="Username" id="username">
+                        <input class="input" type="text" name="username" placeholder="Username">
                         <span class="icon is-small is-left">
                             <i class="fas fa-user"></i>
                         </span>
                         <span class="icon is-small is-right">
                             <i class="fas fa-check"></i>
                         </span>
-                        <p class="is-hidden" id="usernameHelp">Username has already been taken</p>
-                        <p class="is-hidden" id="usernameInvalid">Username does not meet the requirements</p>
                     </div>
                 </div>
                 <div class="field">
                     <p class="control has-icons-left has-icons-right">
-                        <input class="input" type="email" name="email" placeholder="Email" id="email">
+                        <input class="input" type="email" name="email" placeholder="Email">
                         <span class="icon is-small is-left">
                             <i class="fas fa-envelope"></i>
                         </span>
@@ -76,16 +40,14 @@
                             <i class="fas fa-check"></i>
                         </span>
                     </p>
-                    <p class="is-hidden" id="emailHelp">Invalid Email</p>
                 </div>
                 <div class="field">
                     <p class="control has-icons-left">
-                        <input class="input" type="password" name="password" placeholder="Password" id="rPassword">
+                        <input class="input" type="password" name="password" placeholder="Password">
                         <span class="icon is-small is-left">
                             <i class="fas fa-lock"></i>
                         </span>
                     </p>
-                    <p class="is-hidden" id="rPasswordHelp">Password does not meet the requirements</p>
                 </div>
                 <div class="field">
                     <p class="control">
@@ -97,5 +59,4 @@
             </form>
         </div>
     </section>
-    <script src="js/main.js"></script>
 </body></html>
