@@ -1,5 +1,5 @@
 <?php
-
+//Matt Kealamakia - Redirect changes
 session_start();
 
 

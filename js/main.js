@@ -60,4 +60,6 @@ switch(message){
   case "Fill out form":
     alert("Please fill out the entire form")
     break;
+  default:
+    break;
 }

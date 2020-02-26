@@ -1,4 +1,5 @@
 <?php
+// Matt Kealamakia - Redirect changes
 
 //db connection constants
 //db connection constants
@@ -29,14 +30,17 @@ if(empty($_POST['username']) || empty($_POST['password']) || empty($_POST['email
 //field validations
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     header('Location: register.html?message=Invalid Email');
+    die();
 }
 
 if (preg_match('/[A-Za-z0-9]+/', $_POST['username']) == 0){
     header('Location: register.html?message=Invalid Username');
+    die();
 }
 
 if (strlen($_POST['password']) >= 20 || strlen($_POST['password']) <= 8) {
     header('Location: register.html?message=Invalid Password');
+    die();
 }
 
 //check if account exists
