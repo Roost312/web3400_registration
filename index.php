@@ -20,23 +20,25 @@
             </h1>
             <form action="authenticate.php" method="post">
                 <div class="field">
-                    <div class="control has-icons-left has-icons-right">
-                        <input class="input" type="text" placeholder="Username" name="username">
-                        <span class="icon is-small is-left">
-                            <i class="fas fa-user"></i>
-                        </span>
-                        <span class="icon is-small is-right">
-                            <i class="fas fa-check"></i>
-                        </span>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" placeholder="Username" name="username" id="username">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <p class="is-hidden" id="usernameHelp">Incorrect Username</p>
+                        </div>
                     </div>
-                </div>
-                <div class="field">
+                    <div class="field">
                     <p class="control has-icons-left">
-                        <input class="input" type="password" placeholder="Password" name="password">
+                        <input class="input" type="password" placeholder="Password" name="password" id="password">
                         <span class="icon is-small is-left">
                             <i class="fas fa-lock"></i>
                         </span>
                     </p>
+                    <p class="is-hidden" id=passwordHelp>Incorrect Password</p>
                 </div>
                 <div class="field">
                     <p class="control">
