@@ -17,27 +17,26 @@ die ('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
 
 if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
-    die ('Please complete the registration form!');
+    header('Location: register.html?message=Fill out form');
 }
 
 if(empty($_POST['username']) || empty($_POST['password']) || empty($_POST['email'])) {
-    die ('Please complete the registration form');
+    header('Location: register.html?message=Fill out form');
 }
 
 //account activation
 
-
 //field validations
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    die ('Email is not valid');
+    header('Location: register.html?message=Invalid Email');
 }
 
 if (preg_match('/[A-Za-z0-9]+/', $_POST['username']) == 0){
-    die ('Username is not valid');
+    header('Location: register.html?message=Invalid Username');
 }
 
 if (strlen($_POST['password']) >= 20 || strlen($_POST['password']) <= 8) {
-    die ('Password must be between 8 and 20 characters long!');
+    header('Location: register.html?message=Invalid Password');
 }
 
 //check if account exists
@@ -48,7 +47,7 @@ if($sql = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'))
 
     if($sql->num_rows > 0) {
         //username exists
-        echo "Username already exists";
+        header('Location: register.html?message=Username Exists');
     } else {
         //insert a new record
         if($stmt = $con->prepare('INSERT INTO accounts (username, password, email, activation_code) VALUES (?,?,?, ?)')) {
