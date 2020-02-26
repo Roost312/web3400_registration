@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
-<!-- This is a comment-->
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -58,4 +55,5 @@
             <a class="button is-small is-link" href="register_main.php">Register</a>
         </div>
     </section>
+    <script src="js/main.js"></script>
 </body></html>
