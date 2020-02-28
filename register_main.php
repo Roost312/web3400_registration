@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <!-- Jessen include top nav file -->
    <?php include './top_nav/top-nav.php'; ?>
     <section class="section">
         <div class="container">

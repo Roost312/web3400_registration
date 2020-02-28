@@ -10,7 +10,7 @@ session_start();
 if ( !isset($_POST['username'], $_POST['password']) ) {
 
 // Could not get the data that should have been sent.
-header('Location: index.html?message=Fill out form');
+header('Location: index.php?message=Fill out form');
 
 }
 
